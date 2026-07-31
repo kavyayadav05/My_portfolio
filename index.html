@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Thunga Kavya Yadav | Full Stack Developer Portfolio | CSE 2027</title>
+  <meta name="description" content="Portfolio of Thunga Kavya Yadav - B.Tech CSE student (2023-2027) at MITS. Full Stack Developer specializing in Java, Spring Boot, React, and MERN stack.">
+  
+  <!-- Google Fonts & FontAwesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Background Mesh Glow -->
+  <div class="bg-mesh">
+    <div class="bg-circle-1"></div>
+    <div class="bg-circle-2"></div>
+  </div>
+
+  <!-- Header Navbar -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="logo">
+        <span class="gradient-text">Kavya</span><span style="color: var(--accent-primary);">.dev</span>
+      </a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#experience" class="nav-link">Experience</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="theme-toggle" class="theme-toggle-btn" title="Toggle Light/Dark Theme">
+          <i class="fas fa-sun"></i>
+        </button>
+        <button id="mobile-menu-btn" class="mobile-menu-btn" title="Toggle Navigation">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="status-badge">
+            <span class="pulse-dot"></span>
+            <span>Open for Campus Placements 2027</span>
+          </div>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="gradient-text">Thunga Kavya Yadav</span>
+          </h1>
+
+          <div class="hero-role">
+            <i class="fas fa-code" style="color: var(--accent-primary);"></i>
+            <span>Full Stack Java & MERN Developer</span>
+          </div>
+
+          <p class="hero-bio">
+            Computer Science & Engineering Undergrad at <strong>MITS</strong> (2023–2027). Passionate about crafting resilient, high-performance web systems using <strong>Java 21, Spring Boot 3, React 19, and MySQL/MongoDB</strong>.
+          </p>
+
+          <div class="hero-cta">
+            <button onclick="openResumeModal()" class="btn-primary">
+              <i class="fas fa-file-download"></i> View / Download Resume
+            </button>
+            <a href="#projects" class="btn-secondary">
+              <i class="fas fa-layer-group"></i> Explore Projects
+            </a>
+          </div>
+
+          <div class="social-links">
+            <a href="https://github.com/kavyayadav05" target="_blank" class="social-btn" title="GitHub">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/thunga-kavya-yadav-7bb9712ba" target="_blank" class="social-btn" title="LinkedIn">
+              <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:kavyayadavthunga@gmail.com" class="social-btn" title="Email">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-avatar-container">
+          <div class="avatar-wrapper">
+            <img src="./mypic.jpg" alt="Thunga Kavya Yadav" class="profile-img">
+          </div>
+          <div class="floating-tech-badge badge-1">
+            <i class="fab fa-java" style="color: #f89820; font-size: 1.2rem;"></i>
+            <span>Spring Boot 3</span>
+          </div>
+          <div class="floating-tech-badge badge-2">
+            <i class="fab fa-react" style="color: #61dafb; font-size: 1.2rem;"></i>
+            <span>React 19 & MERN</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Key Metrics Bar -->
+  <section class="metrics-section">
+    <div class="container">
+      <div class="metrics-grid">
+        <div class="metric-card">
+          <div class="metric-number gradient-text">7.5</div>
+          <div class="metric-label">B.Tech CGPA (MITS)</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number gradient-text">3+</div>
+          <div class="metric-label">Full Stack Projects</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number gradient-text">8 Wks</div>
+          <div class="metric-label">Industry Internship</div>
+        </div>
+        <div class="metric-card">
+          <div class="metric-number gradient-text">96%</div>
+          <div class="metric-label">CBSE Matriculation</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Summary Section -->
+  <section id="about" class="summary-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Professional Summary</span>
+        <h2 class="section-title">About Me & Career Objective</h2>
+      </div>
+
+      <div class="summary-card">
+        <p class="summary-text">
+          Motivated and detail-oriented <span class="summary-highlight">Computer Science & Engineering</span> undergraduate (B.Tech 2023–2027) with hands-on expertise in <span class="summary-highlight">Java Full Stack development</span>, Spring Boot micro-frameworks, and modern frontend technologies including <span class="summary-highlight">React 19 and the MERN stack</span>. Demonstrated track record of building production-grade web applications—such as a real-time smart bus reservation engine with JWT security and transient seat locks—supported by strong fundamentals in <span class="summary-highlight">Data Structures, Algorithms, and Object-Oriented System Design</span>. Adept at collaborative team environments, rapid problem-solving, and continuous learning, seeking an entry-level <span class="summary-highlight">Software Development Engineer (SDE)</span> or Full Stack Web Developer role for <strong>Campus Placements 2027</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Matrix Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Technical Competencies</span>
+        <h2 class="section-title">My Tech Stack & Tools</h2>
+      </div>
+
+      <div class="skills-filter">
+        <button class="filter-btn active" data-filter="all">All Tech</button>
+        <button class="filter-btn" data-filter="java">Java & Backend</button>
+        <button class="filter-btn" data-filter="frontend">Frontend & MERN</button>
+        <button class="filter-btn" data-filter="db">Databases & Tools</button>
+      </div>
+
+      <div class="skills-grid" id="skills-grid">
+        <!-- Java & Backend -->
+        <div class="skill-card" data-category="java">
+          <div class="skill-icon"><i class="fab fa-java"></i></div>
+          <div>
+            <div class="skill-name">Java 21</div>
+            <div class="skill-category">Core / OOP</div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="java">
+          <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+          <div>
+            <div class="skill-name">Spring Boot 3</div>
+            <div class="skill-category">Framework</div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="java">
+          <div class="skill-icon"><i class="fas fa-network-wired"></i></div>
+          <div>
+            <div class="skill-name">REST APIs & JWT</div>
+            <div class="skill-category">Backend Security</div>
+          </div>
+        </div>
+
+        <!-- Frontend & MERN -->
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-icon"><i class="fab fa-react"></i></div>
+          <div>
+            <div class="skill-name">React 19</div>
+            <div class="skill-category">Frontend Library</div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-icon"><i class="fab fa-js"></i></div>
+          <div>
+            <div class="skill-name">JavaScript (ES6+)</div>
+            <div class="skill-category">Web Language</div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="frontend">
+          <div class="skill-icon"><i class="fab fa-html5"></i></div>
+          <div>
+            <div class="skill-name">HTML5 & CSS3</div>
+            <div class="skill-category">UI Structure</div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="java frontend">
+          <div class="skill-icon"><i class="fas fa-c"></i></div>
+          <div>
+            <div class="skill-name">C Language</div>
+            <div class="skill-category">Programming</div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="java frontend">
+          <div class="skill-icon"><i class="fab fa-python"></i></div>
+          <div>
+            <div class="skill-name">Python</div>
+            <div class="skill-category">Basic Scripting</div>
+          </div>
+        </div>
+
+        <!-- Databases & Tools -->
+        <div class="skill-card" data-category="db">
+          <div class="skill-icon"><i class="fas fa-database"></i></div>
+          <div>
+            <div class="skill-name">MySQL</div>
+            <div class="skill-category">RDBMS</div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="db">
+          <div class="skill-icon"><i class="fas fa-server"></i></div>
+          <div>
+            <div class="skill-name">MongoDB</div>
+            <div class="skill-category">NoSQL Database</div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="db">
+          <div class="skill-icon"><i class="fab fa-git-alt"></i></div>
+          <div>
+            <div class="skill-name">Git & GitHub</div>
+            <div class="skill-category">Version Control</div>
+          </div>
+        </div>
+
+        <div class="skill-card" data-category="db">
+          <div class="skill-icon"><i class="fas fa-cloud"></i></div>
+          <div>
+            <div class="skill-name">Cloud & DevOps</div>
+            <div class="skill-category">Interests</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience & Internships Section -->
+  <section id="experience" class="section" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Career Foundation</span>
+        <h2 class="section-title">Internships & Professional Trainings</h2>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Item 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Full Stack Web Development Intern</h3>
+                <span class="timeline-org">VDT EDU TANTR VENTURES PRIVATE LIMITED</span>
+              </div>
+              <span class="timeline-date">8 Weeks (Offline)</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Completed intensive hands-on 8-week full-stack web development industry internship.</li>
+              <li>Worked extensively with HTML, CSS, JavaScript, React.js, Spring Boot, and MySQL.</li>
+              <li>Gained practical experience in real-world application debugging, Git/GitHub version control workflows, and cloud deployment.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Java Full Stack Training</h3>
+                <span class="timeline-org">EthnoTech Technical Training | MITS Campus</span>
+              </div>
+              <span class="timeline-date">2026</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Mastered Java, Spring Boot, Spring MVC, MySQL, HTML, CSS, JavaScript, and React.js.</li>
+              <li>Designed and developed full-stack web applications and robust RESTful API services.</li>
+              <li>Enhanced skills in backend system architecture, frontend integration, and database schema management.</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Item 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Data Structures Using Java & MERN Stack Training</h3>
+                <span class="timeline-org">Rampex Training | MITS Campus</span>
+              </div>
+              <span class="timeline-date">Certification Track</span>
+            </div>
+            <ul class="timeline-bullets">
+              <li>Deepened algorithmic problem-solving capabilities utilizing Data Structures in Java.</li>
+              <li>Acquired hands-on proficiency across full-stack MERN technologies (MongoDB, Express, React, Node.js).</li>
+              <li>Built real-world applications to demonstrate practical software design patterns.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Portfolio Highlights</span>
+        <h2 class="section-title">Featured Projects</h2>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Project 1 -->
+        <div class="project-card" data-category="java frontend">
+          <div class="project-header-banner">
+            <div class="project-banner-overlay"></div>
+            <div class="project-banner-title">Aviora</div>
+            <span class="project-badge-duration">8 Weeks | Team of 4</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Aviora - Smart Bus Reservation System</h3>
+            <p class="project-desc">
+              A full-stack bus booking engine with 5-minute transient seat locking, 2D seat matrix grid, multi-role JWT security, PNR E-ticket barcode generator, and live journey tracking.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Java 21</span>
+              <span class="tech-tag">Spring Boot 3</span>
+              <span class="tech-tag">React 19</span>
+              <span class="tech-tag">MongoDB</span>
+              <span class="tech-tag">JWT</span>
+            </div>
+            <div class="project-actions">
+              <button onclick="openProjectModal('aviora')" class="btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+                <i class="fas fa-circle-info"></i> Project Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="project-card" data-category="java db">
+          <div class="project-header-banner" style="background: linear-gradient(135deg, #0ea5e9 0%, #3b82f6 100%);">
+            <div class="project-banner-overlay"></div>
+            <div class="project-banner-title">SMS Portal</div>
+            <span class="project-badge-duration">6 Weeks | Team of 4</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Student Management System</h3>
+            <p class="project-desc">
+              Object-oriented Java application with automated grade calculation (A+ to F), multi-field record search, dynamic sorting, performance analytics, and CSV report export.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">Java 17/21</span>
+              <span class="tech-tag">OOPs</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">File I/O</span>
+              <span class="tech-tag">Serialization</span>
+            </div>
+            <div class="project-actions">
+              <button onclick="openProjectModal('student')" class="btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+                <i class="fas fa-circle-info"></i> Project Details
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- Project 3 -->
+        <div class="project-card" data-category="frontend">
+          <div class="project-header-banner" style="background: linear-gradient(135deg, #10b981 0%, #14b8a6 100%);">
+            <div class="project-banner-overlay"></div>
+            <div class="project-banner-title">E-Course Hub</div>
+            <span class="project-badge-duration">4 Weeks | Team of 4</span>
+          </div>
+          <div class="project-body">
+            <h3 class="project-title">Online Course Management Portal</h3>
+            <p class="project-desc">
+              Responsive E-Learning platform featuring student authentication, interactive course search & category filters, progress bar tracking, and auto printable certificate generation.
+            </p>
+            <div class="project-tech-tags">
+              <span class="tech-tag">HTML5</span>
+              <span class="tech-tag">CSS3</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">LocalStorage</span>
+            </div>
+            <div class="project-actions">
+              <button onclick="openProjectModal('course')" class="btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+                <i class="fas fa-circle-info"></i> Project Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="section" style="background: var(--bg-surface);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Academic Qualification</span>
+        <h2 class="section-title">Education Timeline</h2>
+      </div>
+
+      <div class="timeline-container">
+        <!-- Education 1 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">B.Tech in Computer Science & Engineering</h3>
+                <span class="timeline-org">Madanapalle Institute of Technology & Science (MITS), Kadiri Road, AP</span>
+              </div>
+              <span class="timeline-date">2023 – 2027</span>
+            </div>
+            <p style="font-weight: 700; color: var(--accent-primary); margin-top: 0.5rem;">
+              CGPA: 7.5
+            </p>
+          </div>
+        </div>
+
+        <!-- Education 2 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Intermediate (CBSE)</h3>
+                <span class="timeline-org">Narayana Junior Girls College, Kadapa, Andhra Pradesh</span>
+              </div>
+              <span class="timeline-date">2021 – 2023</span>
+            </div>
+            <p style="font-weight: 700; color: var(--accent-primary); margin-top: 0.5rem;">
+              Percentage: 77%
+            </p>
+          </div>
+        </div>
+
+        <!-- Education 3 -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <div class="timeline-header">
+              <div>
+                <h3 class="timeline-title">Matriculation (CBSE)</h3>
+                <span class="timeline-org">Nagarjuna Model School, Kadapa, Andhra Pradesh</span>
+              </div>
+              <span class="timeline-date">2020 – 2021</span>
+            </div>
+            <p style="font-weight: 700; color: var(--accent-primary); margin-top: 0.5rem;">
+              Percentage: 96%
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Achievements & Certifications -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Recognition & Honors</span>
+        <h2 class="section-title">Certifications & Co-Curriculars</h2>
+      </div>
+
+      <div class="achievements-grid">
+        <div class="achievement-card">
+          <div class="achievement-icon-box"><i class="fas fa-trophy"></i></div>
+          <div>
+            <div class="achievement-title">Smart India Hackathon (SIH)</div>
+            <div class="achievement-issuer">MITS Campus Level</div>
+            <div class="achievement-desc">Active participant solving real-world challenges in hackathon team.</div>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon-box"><i class="fas fa-award"></i></div>
+          <div>
+            <div class="achievement-title">NCC 30(A)BN Certificates</div>
+            <div class="achievement-issuer">National Cadet Corps</div>
+            <div class="achievement-desc">Successfully completed both 'A' and 'B' official certificates.</div>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon-box"><i class="fas fa-certificate"></i></div>
+          <div>
+            <div class="achievement-title">DSA, MERN & Cloud Certification</div>
+            <div class="achievement-issuer">Rampex Institutions</div>
+            <div class="achievement-desc">Certified training in DSA with Java, MERN Stack, and Cloud Computing concepts.</div>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon-box"><i class="fas fa-user-graduate"></i></div>
+          <div>
+            <div class="achievement-title">Employability Skill Certification</div>
+            <div class="achievement-issuer">Mahindra Pride & Naandi Foundation</div>
+            <div class="achievement-desc">2025–2026 certification in corporate communication and professional readiness.</div>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon-box"><i class="fas fa-users"></i></div>
+          <div>
+            <div class="achievement-title">ISTE & CSI Student Member</div>
+            <div class="achievement-issuer">Professional Societies</div>
+            <div class="achievement-desc">Active member of ISTE and CSI student chapters at MITS.</div>
+          </div>
+        </div>
+
+        <div class="achievement-card">
+          <div class="achievement-icon-box"><i class="fas fa-lightbulb"></i></div>
+          <div>
+            <div class="achievement-title">NATIONAL IP YATRA 2025</div>
+            <div class="achievement-issuer">MITS Campus</div>
+            <div class="achievement-desc">Participated in Intellectual Property Rights & Innovation symposium.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact-section section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-subtitle">Get In Touch</span>
+        <h2 class="section-title">Let's Connect for Opportunities</h2>
+      </div>
+
+      <div class="contact-grid">
+        <div class="contact-info-card">
+          <h3 style="font-size: 1.5rem; font-weight: 800; margin-bottom: 1.5rem;">Contact Information</h3>
+
+          <div class="contact-item">
+            <div class="contact-icon-wrapper"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="contact-label">Primary Email</div>
+              <a href="mailto:kavyayadavthunga@gmail.com" class="contact-value">kavyayadavthunga@gmail.com</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-wrapper"><i class="fas fa-graduation-cap"></i></div>
+            <div>
+              <div class="contact-label">College Email</div>
+              <a href="mailto:23691A0580@mits.ac.in" class="contact-value">23691A0580@mits.ac.in</a>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-wrapper"><i class="fas fa-phone"></i></div>
+            <div>
+              <div class="contact-label">Phone Numbers</div>
+              <div class="contact-value">+91 9014754672 / +91 9441403864</div>
+            </div>
+          </div>
+
+          <div class="contact-item">
+            <div class="contact-icon-wrapper"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="contact-label">Location</div>
+              <div class="contact-value">Kadapa, Andhra Pradesh - 516003</div>
+            </div>
+          </div>
+        </div>
+
+        <form id="contact-form" class="contact-form">
+          <h3 style="font-size: 1.5rem; font-weight: 800;">Send a Message</h3>
+          
+          <div class="form-group">
+            <label for="form-name" class="form-label">Your Name</label>
+            <input type="text" id="form-name" class="form-input" placeholder="e.g. Recruiter / Hiring Manager" required>
+          </div>
+
+          <div class="form-group">
+            <label for="form-email" class="form-label">Your Email</label>
+            <input type="email" id="form-email" class="form-input" placeholder="name@company.com" required>
+          </div>
+
+          <div class="form-group">
+            <label for="form-message" class="form-label">Message</label>
+            <textarea id="form-message" class="form-textarea" rows="4" placeholder="Hello Kavya, we are interested in discussing placement opportunities..." required></textarea>
+          </div>
+
+          <button type="submit" class="btn-primary" style="width: 100%; justify-content: center; padding: 0.9rem;">
+            <i class="fas fa-paper-plane"></i> Send Message
+          </button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <div class="social-links">
+          <a href="https://github.com/kavyayadav05" target="_blank" class="social-btn" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/thunga-kavya-yadav-7bb9712ba" target="_blank" class="social-btn" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+          <a href="mailto:kavyayadavthunga@gmail.com" class="social-btn" title="Email"><i class="fas fa-envelope"></i></a>
+        </div>
+        <p class="footer-text">
+          Designed & Built with <i class="fas fa-heart" style="color: #ef4444;"></i> for Placement Drive 2027
+        </p>
+        <p class="footer-text" style="font-size: 0.8rem;">
+          © 2026 Thunga Kavya Yadav. All Rights Reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Modal Component Overlay -->
+  <div id="modal-overlay" class="modal-overlay" onclick="if(event.target === this) closeModal()">
+    <div class="modal-content">
+      <button class="modal-close-btn" onclick="closeModal()" title="Close"><i class="fas fa-times"></i></button>
+      <div id="modal-body"></div>
+    </div>
+  </div>
+
+  <!-- Custom Scripts -->
+  <script src="script.js"></script>
+</body>
+</html>
